@@ -1,0 +1,39 @@
+{
+  "name": "@detra-lab/tsc",
+  "version": "0.1.0",
+  "description": "A collection of tsconfig to extend in your own apps, tuned to a particular runtime environment.",
+  "author": {
+    "name": "Detra",
+    "email": "detra.lab@pm.me",
+    "homepage": "https://github.com/detra-lab"
+  },
+  "homepage": "https://github.com/detra-lab/tsc#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/detra-lab/tsc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/detra-lab/tsc/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "base/tsconfig.json",
+  "files": [
+    "/base",
+    "/node",
+    "/react"
+  ],
+  "devDependencies": {
+    "@types/node": "^16.0.0"
+  },
+  "peerDependencies": {
+    "@types/node": ">=16",
+    "typescript": "^4.9 || ^5.0"
+  },
+  "keywords": [
+    "typescript",
+    "ts-config"
+  ]
+}

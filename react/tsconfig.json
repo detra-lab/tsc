@@ -1,0 +1,21 @@
+{
+  "extends": "../base/tsconfig.json",
+
+  "display": "React",
+
+  "compilerOptions": {
+    /* Modules */
+    "module": "ESNext",
+
+    /* Emit */
+    "noEmit": true,
+
+    /* Interop Constraints */
+    "allowSyntheticDefaultImports": true,
+
+    /* Language and Environment */
+    "jsx": "react",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "target": "ES2017"
+  }
+}

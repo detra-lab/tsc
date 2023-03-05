@@ -1,0 +1,14 @@
+{
+  "extends": "../base/tsconfig.json",
+
+  "display": "Node v16 - ESM",
+
+  "compilerOptions": {
+    /* Modules */
+    "module": "ESNext",
+
+    /* Language and Environment */
+    "lib": ["ES2021"],
+    "target": "ES2021"
+  }
+}
