@@ -1,0 +1,7 @@
+*log
+.DS_Store
+.cache
+.env*
+.idea
+Thumbs.db
+node_modules
