@@ -1,5 +1,8 @@
 # TS Configs
 
+[![NPM Version][npm_version_badge]][npm_badge_url]
+[![NPM Downloads][npm_downloads_badge]][npm_badge_url]
+
 A collection of TSConfigs to extend in your own apps, tuned to a particular runtime environment.
 
 - [TS Configs](#ts-configs)
@@ -10,14 +13,7 @@ A collection of TSConfigs to extend in your own apps, tuned to a particular runt
 ## Install
 
 ```sh
-# NPM
 npm add --save-dev @detra-lab/tsc typescript
-
-# PNPM
-pnpm add --save-dev @detra-lab/tsc typescript
-
-# Yarn
-yarn add --dev @detra-lab/tsc typescript
 ```
 
 ## Available Configurations
@@ -78,3 +74,12 @@ Add to your `tsconfig.json`:
 ## License
 
 [MIT License](./LICENSE)
+
+<!-- Badges -->
+
+[npm_version_badge]: https://img.shields.io/npm/v/@detra-lab/tsc?style=flat-square&colorA=6930C3&colorB=5390D9
+[npm_downloads_badge]: https://img.shields.io/npm/dm/@detra-lab/tsc?style=flat-square&colorA=6930C3&colorB=5390D9
+
+<!-- Links -->
+
+[npm_badge_url]: https://www.npmjs.com/package/@detra-lab/tsc
