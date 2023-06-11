@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - stable
+  pull_request:
+    branches:
+      - stable
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  release:
+    if: ${{ contains(github.event.pull_request.body, '[[skip-ci]]') == false }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: pnpm
+
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Creating .npmrc
+        run: |
+          cat << EOF > "$HOME/.npmrc"
+            //registry.npmjs.org/:_authToken=$NPM_TOKEN
+          EOF
+        env:
+          NPM_TOKEN: ${{ secrets.DETRA_NPM_PAT }}
+
+      - name: Create Release PR or Publish to NPM
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          title: 'chore: Bump the package version'
+          commit: 'chore: Bump the package version'
+          publish: pnpm run release
+        env:
+          NPM_TOKEN: ${{ secrets.DETRA_NPM_PAT }}
+          GITHUB_TOKEN: ${{ secrets.CHANGESETS_TOKEN }}
