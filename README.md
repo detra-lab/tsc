@@ -13,7 +13,7 @@ A collection of TSConfigs to extend in your own apps, tuned to a particular runt
 ## Install
 
 ```sh
-npm add --save-dev @detra-lab/tsc typescript
+pnpm add -D @detra-lab/tsc typescript
 ```
 
 ## Available Configurations
