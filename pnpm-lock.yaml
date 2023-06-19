@@ -16,9 +16,18 @@ devDependencies:
   '@changesets/cli':
     specifier: ^2.26.1
     version: 2.26.1
+  '@detra-lab/prettier-config':
+    specifier: ^0.1.0
+    version: 0.1.0(prettier@2.8.8)
+  '@evilmartians/lefthook':
+    specifier: ^1.4.2
+    version: 1.4.2
   '@types/node':
     specifier: ^16.0.0
     version: 16.0.0
+  prettier:
+    specifier: ^2.8.8
+    version: 2.8.8
 
 packages:
 
@@ -232,6 +241,22 @@ packages:
       fs-extra: 7.0.1
       human-id: 1.0.2
       prettier: 2.8.8
+    dev: true
+
+  /@detra-lab/prettier-config@0.1.0(prettier@2.8.8):
+    resolution: {integrity: sha512-rtDIaxkmAcbge8Jicu5eXdH+UzMmJgybnMzoMcrpk95lGFLEiHntkikRHaG+KQIMA5klfPZEEYjl3I/CzK7VTw==}
+    peerDependencies:
+      prettier: ^2.8.0
+    dependencies:
+      prettier: 2.8.8
+    dev: true
+
+  /@evilmartians/lefthook@1.4.2:
+    resolution: {integrity: sha512-YTsQB9QzJcT5bHfzjQbLHFEtsHn0lxnd/yDpQnHwMUwTNfKGo9H+slCd24JN4snvifDVUyvQ5MX63FJWDHrIUw==}
+    cpu: [x64, arm64, ia32]
+    os: [darwin, linux, win32]
+    hasBin: true
+    requiresBuild: true
     dev: true
 
   /@manypkg/find-root@1.1.0:

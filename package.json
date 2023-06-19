@@ -21,16 +21,21 @@
   "main": "base/tsconfig.json",
   "files": [
     "/base",
+    "/lit",
     "/node",
     "/react"
   ],
+  "prettier": "@detra-lab/prettier-config",
   "scripts": {
     "release": "changeset publish"
   },
   "devDependencies": {
     "@changesets/changelog-git": "^0.1.14",
     "@changesets/cli": "^2.26.1",
-    "@types/node": "^16.0.0"
+    "@detra-lab/prettier-config": "^0.1.0",
+    "@evilmartians/lefthook": "^1.4.2",
+    "@types/node": "^16.0.0",
+    "prettier": "^2.8.8"
   },
   "peerDependencies": {
     "@types/node": ">=16",

@@ -1,11 +1,12 @@
 {
   "extends": "../base/tsconfig.json",
 
-  "display": "Node v16 - CJS",
+  "display": "Node >=v16 - CJS",
 
   "compilerOptions": {
     /* Modules */
     "module": "CommonJS",
+    "moduleResolution": "node",
 
     /* Language and Environment */
     "lib": ["ES2021"],

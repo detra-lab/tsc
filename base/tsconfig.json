@@ -13,11 +13,11 @@
     "strict": true,
 
     /* Modules */
-    "moduleResolution": "node",
     "resolveJsonModule": true,
     "types": ["node"],
 
     /* Emit */
+    "noEmitOnError": true,
     "removeComments": true,
 
     /* JavaScript Support */

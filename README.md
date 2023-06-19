@@ -58,9 +58,24 @@ Add to your `tsconfig.json`:
 
 <details>
 
+<summary><strong>Lit</strong></summary>
+
+The following configuration is helpful in projects based on [Lit](https://lit.dev/).
+
+Add to your `tsconfig.json`:
+
+```json
+{
+  "extends": "@detra-lab/tsc/lit/tsconfig.json"
+}
+```
+</details>
+
+<details>
+
 <summary><strong>React.js</strong></summary>
 
-> ⚠️ The following configuration is helpful in projects based on Create React App and Next.js.
+The following configuration is helpful in projects based on [Create React App](https://create-react-app.dev/) and [Next.js](https://nextjs.org/).
 
 Add to your `tsconfig.json`:
 
