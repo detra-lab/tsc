@@ -1,9 +1,6 @@
 name: CI
 
 on:
-  push:
-    branches:
-      - stable
   pull_request:
     branches:
       - stable
@@ -14,7 +11,7 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   release:
-    if: ${{ contains(github.event.pull_request.body, '[[skip-ci]]') == false }}
+    if: ${{ github.event.pull_request.merged == true || !contains(github.event.pull_request.body, '[[skip-ci]]') }}
 
     runs-on: ubuntu-latest
 

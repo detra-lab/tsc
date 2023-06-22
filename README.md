@@ -6,15 +6,8 @@
 A collection of TSConfigs to extend in your own apps, tuned to a particular runtime environment.
 
 - [TS Configs](#ts-configs)
-  - [Install](#install)
   - [Available Configurations](#available-configurations)
   - [License](#license)
-
-## Install
-
-```sh
-pnpm add -D @detra-lab/tsc typescript
-```
 
 ## Available Configurations
 
@@ -22,9 +15,15 @@ pnpm add -D @detra-lab/tsc typescript
 
 <summary><strong>Node.js - CJS</strong></summary>
 
-> ⚠️ The following configuration supports a version of Node >= 16.
+> ❗️ A version of Node >= 16 is supported by the following configuration.
 
-Add to your `tsconfig.json`:
+To install the configuration and its related dev-dependencies, use the following command:
+
+```sh
+pnpm add -D @detra-lab/tsc typescript @types/node@16
+```
+
+After the installation, add the code snippet below to your `tsconfig.json` file:
 
 ```json
 {
@@ -35,15 +34,22 @@ Add to your `tsconfig.json`:
   }
 }
 ```
+
 </details>
 
 <details>
 
 <summary><strong>Node.js - ESM</strong></summary>
 
-> ⚠️ The following configuration supports a version of Node >= 16.
+> ❗️ A version of Node >= 16 is supported by the following configuration.
 
-Add to your `tsconfig.json`:
+To install the configuration and its related dev-dependencies, use the following command:
+
+```sh
+pnpm add -D @detra-lab/tsc typescript @types/node@16
+```
+
+After the installation, add the code snippet below to your `tsconfig.json` file:
 
 ```json
 {
@@ -54,36 +60,47 @@ Add to your `tsconfig.json`:
   }
 }
 ```
+
 </details>
 
 <details>
 
 <summary><strong>Lit</strong></summary>
 
-The following configuration is helpful in projects based on [Lit](https://lit.dev/).
+If you're working on projects that use [Lit](https://lit.dev/) with TypeScript, you can simplify the setup process by installing a configuration and its related dependencies using the following command:
 
-Add to your `tsconfig.json`:
+```sh
+pnpm add -D @detra-lab/tsc typescript
+```
+
+After the installation, add the code snippet below to your `tsconfig.json` file:
 
 ```json
 {
   "extends": "@detra-lab/tsc/lit/tsconfig.json"
 }
 ```
+
 </details>
 
 <details>
 
 <summary><strong>React.js</strong></summary>
 
-The following configuration is helpful in projects based on [Create React App](https://create-react-app.dev/) and [Next.js](https://nextjs.org/).
+When working on projects that involve using React with TypeScript, such as [Create React App](https://create-react-app.dev/) or [Next.js](https://nextjs.org/), you can simplify the setup process by installing a configuration and its dependencies with a single command:
 
-Add to your `tsconfig.json`:
+```sh
+pnpm add -D @detra-lab/tsc typescript
+```
+
+After the installation, add the code snippet below to your `tsconfig.json` file:
 
 ```json
 {
   "extends": "@detra-lab/tsc/react/tsconfig.json"
 }
 ```
+
 </details>
 
 ## License
