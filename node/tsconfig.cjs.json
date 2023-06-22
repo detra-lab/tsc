@@ -10,6 +10,7 @@
     "types": ["node"],
 
     /* Language and Environment */
-    "lib": ["ESNext"]
+    "lib": ["ESNext"],
+    "target": "ES2020"
   }
 }
