@@ -5,11 +5,10 @@
 
   "compilerOptions": {
     /* Modules */
-    "module": "ESNext",
-    "moduleResolution": "nodenext",
+    "module": "NodeNext",
+    "types": ["node"],
 
     /* Language and Environment */
-    "lib": ["ES2021"],
-    "target": "ES2021"
+    "lib": ["ESNext"]
   }
 }
