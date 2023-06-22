@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.1
+
+### Patch Changes
+
+- 6da1062: The `target` has been updated to support the `ES2020` language syntax. The `node` types have been moved to the Node's `tsconfig.json` files.
+
 ## 0.2.0
 
 ### Minor Changes
