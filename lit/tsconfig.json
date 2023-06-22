@@ -6,7 +6,7 @@
   "compilerOptions": {
     /* Modules */
     "module": "ESNext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "Bundler",
 
     /* Emit */
     "noEmit": true,
@@ -18,7 +18,6 @@
     /* Language and Environment */
     "experimentalDecorators": true,
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
-    "target": "ES2020",
     "useDefineForClassFields": false
   }
 }

@@ -6,10 +6,10 @@
   "compilerOptions": {
     /* Modules */
     "module": "CommonJS",
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
+    "types": ["node"],
 
     /* Language and Environment */
-    "lib": ["ES2021"],
-    "target": "ES2021"
+    "lib": ["ESNext"]
   }
 }
