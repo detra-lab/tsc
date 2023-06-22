@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.2
+
+### Patch Changes
+
+- 5faff38: The `target` property has been removed from the React and Lit `tsconfig.json` files. These technologies have always had a wide range of target syntax and bundlers to handle source compilation.
+
 ## 0.2.1
 
 ### Patch Changes
