@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.3
+
+### Patch Changes
+
+- 4ef9117: Updated dependencies at latest minor.
+
 ## 0.2.2
 
 ### Patch Changes
