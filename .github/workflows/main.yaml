@@ -1,4 +1,4 @@
-name: CI
+name: Release
 
 on:
   pull_request:
@@ -10,17 +10,29 @@ on:
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
-  release:
+  setup:
+    name: Setup
     if: ${{ github.event.pull_request.merged == true || !contains(github.event.pull_request.body, '[[skip-ci]]') }}
-
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Customize user email
+        run: git config --global user.email "$USER_EMAIL"
+        env:
+          USER_EMAIL: ${{ secrets.DETRA_BOT_EMAIL }}
+
+      - name: Customize user name
+        run: git config --global user.name "detra-bot"
+
+      - name: Setup PNPm
+        uses: pnpm/action-setup@v2
         with:
           version: 8
-      - uses: actions/setup-node@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
         with:
           node-version: 16
           cache: pnpm
@@ -36,6 +48,11 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.DETRA_NPM_PAT }}
 
+  release:
+    name: Release
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
       - name: Create Release PR or Publish to NPM
         id: changesets
         uses: changesets/action@v1
