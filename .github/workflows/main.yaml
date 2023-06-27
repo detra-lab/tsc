@@ -18,13 +18,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Customize user email
-        run: git config --global user.email "$USER_EMAIL"
+      - name: Customize GIT user
+        run: |
+          git config --global user.email "$USER_EMAIL"
+          git config --global user.name "detra-bot"
         env:
           USER_EMAIL: ${{ secrets.DETRA_BOT_EMAIL }}
-
-      - name: Customize user name
-        run: git config --global user.name "detra-bot"
 
       - name: Setup PNPm
         uses: pnpm/action-setup@v2
