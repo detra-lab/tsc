@@ -4,6 +4,5 @@
   "baseBranch": "stable",
   "changelog": "@changesets/changelog-git",
   "commit": false,
-  "setupGitUser": false,
   "updateInternalDependencies": "patch"
 }

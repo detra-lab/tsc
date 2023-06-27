@@ -2,4 +2,4 @@
 '@detra-lab/tsc': patch
 ---
 
-Some changes in github workflows for release
+Internal changes to GitHub workflows for release

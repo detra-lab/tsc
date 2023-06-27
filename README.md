@@ -15,7 +15,7 @@ A collection of TSConfigs to extend in your own apps, tuned to a particular runt
 
 <summary><strong>Node.js - CJS</strong></summary>
 
-> ❗️ A version of Node >= 16 is supported by the following configuration.
+> A version of Node >= 16 is supported by the following configuration.
 
 To install the configuration and its related dev-dependencies, use the following command:
 
@@ -41,7 +41,7 @@ After the installation, add the code snippet below to your `tsconfig.json` file:
 
 <summary><strong>Node.js - ESM</strong></summary>
 
-> ❗️ A version of Node >= 16 is supported by the following configuration.
+> A version of Node >= 16 is supported by the following configuration.
 
 To install the configuration and its related dev-dependencies, use the following command:
 
