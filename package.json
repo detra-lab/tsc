@@ -1,6 +1,6 @@
 {
   "name": "@detra-lab/tsc",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "A collection of tsconfig to extend in your own apps, tuned to a particular runtime environment.",
   "license": "MIT",
   "author": {
