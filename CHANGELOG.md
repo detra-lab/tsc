@@ -4,7 +4,7 @@
 
 ### Patch Changes
 
-- 65e5d63: Internal changes to GitHub workflows for release
+- 65e5d63: Internal changes to GitHub workflows for release.
 
 ## 0.2.3
 
