@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.5
+
+### Patch Changes
+
+- 54747b1: Test the package release.
+
 ## 0.2.4
 
 ### Patch Changes
