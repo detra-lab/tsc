@@ -1,10 +1,6 @@
 name: Release
 
 on:
-  push:
-    branches:
-      - stable
-
   pull_request:
     branches:
       - stable
@@ -20,8 +16,6 @@ env:
 
 jobs:
   release:
-    name: Changesets Release
-
     if: ${{ github.event.pull_request.merged == true || !contains(github.event.pull_request.body, '[skip-ci]') }}
 
     runs-on: ubuntu-latest
