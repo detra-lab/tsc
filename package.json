@@ -21,7 +21,6 @@
     "release": "changeset publish"
   },
   "devDependencies": {
-    "@changesets/changelog-git": "^0.1.14",
     "@changesets/cli": "^2.26.2",
     "@detra-lab/prettier-config": "^0.1.0",
     "@evilmartians/lefthook": "^1.4.3",
@@ -39,7 +38,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "license": "MIT",
+  "license": "Apache License 2.0",
   "author": {
     "name": "Detra",
     "email": "detra.lab@pm.me",

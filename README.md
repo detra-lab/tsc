@@ -105,7 +105,7 @@ After the installation, add the code snippet below to your `tsconfig.json` file:
 
 ## License
 
-[MIT License](./LICENSE)
+[Apache License 2.0](./LICENSE)
 
 <!-- Badges -->
 
