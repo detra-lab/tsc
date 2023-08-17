@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
-    "@detra-lab/prettier-config": "^0.1.0",
+    "@detra-lab/prettier-config": "^0.2.0",
     "@evilmartians/lefthook": "^1.4.3",
     "prettier": "^3.0.0"
   },
