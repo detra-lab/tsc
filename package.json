@@ -24,7 +24,7 @@
     "@changesets/cli": "^2.26.2",
     "@detra-lab/prettier-config": "^0.1.0",
     "@evilmartians/lefthook": "^1.4.3",
-    "prettier": "^2.8.8"
+    "prettier": "^3.0.0"
   },
   "peerDependencies": {
     "@types/node": ">=16",
