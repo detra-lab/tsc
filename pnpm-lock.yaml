@@ -17,8 +17,8 @@ devDependencies:
     specifier: ^2.26.2
     version: 2.26.2
   '@detra-lab/prettier-config':
-    specifier: ^0.1.0
-    version: 0.1.0(prettier@3.0.0)
+    specifier: ^0.2.0
+    version: 0.2.0(prettier@3.0.0)
   '@evilmartians/lefthook':
     specifier: ^1.4.3
     version: 1.4.3
@@ -240,10 +240,10 @@ packages:
       prettier: 2.8.8
     dev: true
 
-  /@detra-lab/prettier-config@0.1.0(prettier@3.0.0):
-    resolution: {integrity: sha512-rtDIaxkmAcbge8Jicu5eXdH+UzMmJgybnMzoMcrpk95lGFLEiHntkikRHaG+KQIMA5klfPZEEYjl3I/CzK7VTw==}
+  /@detra-lab/prettier-config@0.2.0(prettier@3.0.0):
+    resolution: {integrity: sha512-gk8wgmSclS8O2AUXZaaL0Ioi1/znMH8dBDCJdwMZPBfRZ+DjSYDyYf8I0ZXpURjOxQNlmGcIzc5lQLXkQnA3xg==}
     peerDependencies:
-      prettier: ^2.8.0
+      prettier: ^2.8 || ^3.0
     dependencies:
       prettier: 3.0.0
     dev: true
