@@ -9,11 +9,6 @@ on:
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
-env:
-  GH_USER_EMAIL: ${{ secrets.DETRA_BOT_EMAIL }}
-  GH_TOKEN: ${{ secrets.DETRA_GH_PAT }}
-  NPM_TOKEN: ${{ secrets.DETRA_NPM_PAT }}
-
 jobs:
   release:
     if: ${{ github.event.pull_request.merged == true || !contains(github.event.pull_request.body, '[skip-ci]') }}
@@ -23,6 +18,23 @@ jobs:
       - name: ⬇️ Checkout
         uses: actions/checkout@v3
 
+      - name: 🗄️ Load Secrets
+        id: secrets
+        uses: 1password/load-secrets-action@v1
+        with:
+          export-env: false
+        env:
+          OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+          BOT_NAME: op://detra/rawdwz5qfijf3ojxok3byitbqm/username
+          BOT_EMAIL: op://detra/rawdwz5qfijf3ojxok3byitbqm/email
+          BOT_GH_TOKEN: op://detra/rawdwz5qfijf3ojxok3byitbqm/credential
+          BOT_NPM_TOKEN: op://detra/fgecthfcjhz3l6j7spintrag7m/credential
+
+      - name: 🏗️ Configure Git User
+        run: |
+          git config --global user.name ${{ steps.secrets.outputs.BOT_NAME }}
+          git config --global user.email ${{ steps.secrets.outputs.BOT_EMAIL }}
+
       - name: 📦 Setup PNPm
         uses: pnpm/action-setup@v2
         with:
@@ -31,7 +43,7 @@ jobs:
       - name: 🟢 Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
           cache: pnpm
 
       - name: 🧩 Install Dependencies
@@ -40,20 +52,15 @@ jobs:
       - name: 🏗️ Configure .npmrc
         run: |
           cat << EOF > "$HOME/.npmrc"
-            //registry.npmjs.org/:_authToken=$NPM_TOKEN
+            //registry.npmjs.org/:_authToken=${{ steps.secrets.outputs.BOT_NPM_TOKEN }}
           EOF
-
-      - name: 🏗️ Configure Git User
-        run: |
-          git config --global user.name "detra-bot"
-          git config --global user.email "$GH_USER_EMAIL"
 
       - name: 📣 Create Release PR or Publish to NPM
         id: changesets
         uses: changesets/action@v1
         env:
-          NPM_TOKEN: ${{ env.NPM_TOKEN }}
-          GITHUB_TOKEN: ${{ env.GH_TOKEN }}
+          NPM_TOKEN: ${{ steps.secrets.outputs.BOT_NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.secrets.outputs.BOT_GH_TOKEN }}
         with:
           setupGitUser: false
           publish: pnpm run release
