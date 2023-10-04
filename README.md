@@ -109,8 +109,8 @@ After the installation, add the code snippet below to your `tsconfig.json` file:
 
 <!-- Badges -->
 
-[npm_version_badge]: https://img.shields.io/npm/v/@detra-lab/tsc?style=flat-square&colorA=383AB5&colorB=5390D9
-[npm_downloads_badge]: https://img.shields.io/npm/dm/@detra-lab/tsc?style=flat-square&colorA=383AB5&colorB=5390D9
+[npm_version_badge]: https://img.shields.io/npm/v/@detra-lab/tsc?style=flat-square&colorA=424394&colorB=80ffdb
+[npm_downloads_badge]: https://img.shields.io/npm/dm/@detra-lab/tsc?style=flat-square&colorA=424394&colorB=80ffdb
 
 <!-- Links -->
 
