@@ -12,9 +12,7 @@ A collection of TSConfigs to extend in your own apps, tuned to a particular runt
 ## Available Configurations
 
 <details>
-
 <summary><strong>Node.js - CJS</strong></summary>
-
 > A version of Node >= 16 is supported by the following configuration.
 
 To install the configuration and its related dev-dependencies, use the following command:
@@ -34,13 +32,10 @@ After the installation, add the code snippet below to your `tsconfig.json` file:
   }
 }
 ```
-
 </details>
 
 <details>
-
 <summary><strong>Node.js - ESM</strong></summary>
-
 > A version of Node >= 16 is supported by the following configuration.
 
 To install the configuration and its related dev-dependencies, use the following command:
@@ -60,13 +55,10 @@ After the installation, add the code snippet below to your `tsconfig.json` file:
   }
 }
 ```
-
 </details>
 
 <details>
-
 <summary><strong>Lit</strong></summary>
-
 If you're working on projects that use [Lit](https://lit.dev/) with TypeScript, you can simplify the setup process by installing a configuration and its related dependencies using the following command:
 
 ```sh
@@ -80,13 +72,10 @@ After the installation, add the code snippet below to your `tsconfig.json` file:
   "extends": "@detra-lab/tsc/lit/tsconfig.json"
 }
 ```
-
 </details>
 
 <details>
-
 <summary><strong>React.js</strong></summary>
-
 When working on projects that involve using React with TypeScript, such as [Create React App](https://create-react-app.dev/) or [Next.js](https://nextjs.org/), you can simplify the setup process by installing a configuration and its dependencies with a single command:
 
 ```sh
@@ -100,18 +89,17 @@ After the installation, add the code snippet below to your `tsconfig.json` file:
   "extends": "@detra-lab/tsc/react/tsconfig.json"
 }
 ```
-
 </details>
 
 ## License
 
-[Apache License 2.0](./LICENSE)
+[Apache License 2.0](https://github.com/detra-lab/tsc/blob/stable/LICENSE)
+
+<div align="center"><img src="https://raw.github.com/detra-lab/.github/stable/profile/logo.svg" width="100" height="100" alt="Detra" /><p><small>© 2023 Detra</small></p></div>
 
 <!-- Badges -->
-
 [npm_version_badge]: https://img.shields.io/npm/v/@detra-lab/tsc?style=flat-square&colorA=424394&colorB=80ffdb
 [npm_downloads_badge]: https://img.shields.io/npm/dm/@detra-lab/tsc?style=flat-square&colorA=424394&colorB=80ffdb
 
 <!-- Links -->
-
 [npm_badge_url]: https://www.npmjs.com/package/@detra-lab/tsc
