@@ -7,12 +7,14 @@ A collection of TSConfigs to extend in your own apps, tuned to a particular runt
 
 - [TS Configs](#ts-configs)
   - [Available Configurations](#available-configurations)
+  - [Code of Conduct](#code-of-conduct)
   - [License](#license)
 
 ## Available Configurations
 
 <details>
 <summary><strong>Node.js - CJS</strong></summary>
+
 > A version of Node >= 16 is supported by the following configuration.
 
 To install the configuration and its related dev-dependencies, use the following command:
@@ -36,6 +38,7 @@ After the installation, add the code snippet below to your `tsconfig.json` file:
 
 <details>
 <summary><strong>Node.js - ESM</strong></summary>
+
 > A version of Node >= 16 is supported by the following configuration.
 
 To install the configuration and its related dev-dependencies, use the following command:
@@ -59,6 +62,7 @@ After the installation, add the code snippet below to your `tsconfig.json` file:
 
 <details>
 <summary><strong>Lit</strong></summary>
+
 If you're working on projects that use [Lit](https://lit.dev/) with TypeScript, you can simplify the setup process by installing a configuration and its related dependencies using the following command:
 
 ```sh
@@ -76,6 +80,7 @@ After the installation, add the code snippet below to your `tsconfig.json` file:
 
 <details>
 <summary><strong>React.js</strong></summary>
+
 When working on projects that involve using React with TypeScript, such as [Create React App](https://create-react-app.dev/) or [Next.js](https://nextjs.org/), you can simplify the setup process by installing a configuration and its dependencies with a single command:
 
 ```sh
@@ -90,6 +95,10 @@ After the installation, add the code snippet below to your `tsconfig.json` file:
 }
 ```
 </details>
+
+## Code of Conduct
+
+Help us keep the project open and inclusive. Please read and follow our [Code of Conduct](https://github.com/detra-lab/tsc/blob/stable/CODE_OF_CONDUCT.md).
 
 ## License
 
