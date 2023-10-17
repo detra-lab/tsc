@@ -6,11 +6,11 @@
 A collection of TSConfigs to extend in your own apps, tuned to a particular runtime environment.
 
 - [TS Configs](#ts-configs)
-  - [Available Configurations](#available-configurations)
+  - [Available configurations](#available-configurations)
   - [Code of Conduct](#code-of-conduct)
   - [License](#license)
 
-## Available Configurations
+## Available configurations
 
 <details>
 <summary><strong>Node.js - CJS</strong></summary>
