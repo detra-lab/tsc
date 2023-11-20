@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.6
+
+### Patch Changes
+
+- 139c80c: Added changeset script in `package.json`.
+
 ## 0.2.5
 
 ### Patch Changes
