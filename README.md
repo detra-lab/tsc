@@ -27,7 +27,7 @@ After the installation, add the code snippet below to your `tsconfig.json` file:
 
 ```json
 {
-  "extends": "@detra-lab/tsc/node/tsconfig.cjs.json",
+  "extends": "@detra-lab/tsc/node/cjs",
   "compilerOptions": {
     "declarationDir": "./types",
     "typeRoots": ["./types", "./node_modules/@types"]
@@ -51,7 +51,7 @@ After the installation, add the code snippet below to your `tsconfig.json` file:
 
 ```json
 {
-  "extends": "@detra-lab/tsc/node/tsconfig.esm.json",
+  "extends": "@detra-lab/tsc/node/esm",
   "compilerOptions": {
     "declarationDir": "./types",
     "typeRoots": ["./types", "./node_modules/@types"]
@@ -73,7 +73,7 @@ After the installation, add the code snippet below to your `tsconfig.json` file:
 
 ```json
 {
-  "extends": "@detra-lab/tsc/lit/tsconfig.json"
+  "extends": "@detra-lab/tsc/lit"
 }
 ```
 </details>
@@ -91,7 +91,7 @@ After the installation, add the code snippet below to your `tsconfig.json` file:
 
 ```json
 {
-  "extends": "@detra-lab/tsc/react/tsconfig.json"
+  "extends": "@detra-lab/tsc/react"
 }
 ```
 </details>
