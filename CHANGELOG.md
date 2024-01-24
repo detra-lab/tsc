@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.7
+
+### Patch Changes
+
+- 25c4aed: Updated the `tsconfig` configurations in the `README` file, according to the new exports.
+
 ## 0.2.6
 
 ### Patch Changes
