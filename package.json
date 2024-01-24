@@ -1,6 +1,6 @@
 {
   "name": "@detra-lab/tsc",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "A collection of tsconfig to extend in your own apps, tuned to a particular runtime environment.",
   "main": "./base/tsconfig.json",
   "exports": {
