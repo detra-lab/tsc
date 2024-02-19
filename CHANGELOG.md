@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.0
+
+### Minor Changes
+
+- fddb548: Support for TypeScript `v4.9` has been dropped.
+
 ## 0.2.7
 
 ### Patch Changes
